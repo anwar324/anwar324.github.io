@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    
+}    
+body {
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size:  16px;
+    background-image:url('images/pattern-background-desktop.svg');
+    background-repeat:repeat no-repeat  ;
+   
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    flex-wrap: wrap;
+  
+}
+.main{
+    background-color: white;
+    border-radius: 10px;
+    max-width:20%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0; 
+}
+.musicimg img {
+    min-width: 100%;
+    max-width: 100%;
+    border-radius: 10px;
+    
+}
+.plan {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:#fffafd;
+    border-radius: 20px;
+    
+    
+}
+h3, p, .plan, .pricing-button, .cancel {
+    margin-right: 25px;
+    margin-left: 25px;
+}
+.icon-music {
+    width: 10%;
+}
+.plan-sub {
+    display: flex;
+    flex-direction: column;
+}
+.pricing-button {
+    background-color: hsl(245, 75%, 52%);
+    border: 1px solid #9dd1ff;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    padding:15px 35px;
+    text-decoration: none;
+    margin-top:25px ;
+    margin-bottom:25px ;
+    transform: background-color 200ms ease-in-out;
+}
+.pricing-button:hover{
+    background-color: hsl(224, 23%, 55%);
+}
+.pricing-price {
+    display: block;
+    color:rgb(55, 63, 73);
+ 
+}
+.btn-change:hover{
+    text-decoration: none;
+    color:hsl(224, 23%, 55%) ;
+}
+.cancel {
+    text-decoration: none;
+    margin-bottom: 25px;
+    color: rgb(55, 63, 73);;
+}
+.cancel:hover{
+    font-weight: bold;
+}
+p {
+    color:rgb(55, 63, 73);
+}
+
+.attribution { 
+    display: block;
+    
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+
+@media (max-width:575px){
+    html{
+        margin-top:35px;
+    }
+    body {
+        background-image:url('images/pattern-background-desktop.svg');
+        background-repeat:repeat-y ;
+        min-height: 50vh;
+        margin-bottom: 0;
+    }
+    .main {
+        
+        max-width:100%;
+        margin-bottom: 0;
+
+    }
+   
+}
